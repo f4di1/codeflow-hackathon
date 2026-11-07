@@ -1,0 +1,30 @@
+// THE "RECOMMENDED" GRID: OUR JOKE TITLE + A LOCAL VIDEO FILE IN VIDEOS/ (PLAYS EVEN FROM A DOUBLE-CLICKED FILE).
+// ALL CLIPS ARE FREE: PUBLIC DOMAIN, CC0 OR CREATIVE COMMONS, FROM WIKIMEDIA COMMONS (240P WEBM, 0.4–7 MB EACH),
+// DOWNLOADED 2026-11-07. CC BY / CC BY-SA REQUIRE CREDITING THE AUTHOR: THE WATCH PAGE SHOWS LICENSE + AUTHOR + SOURCE.
+// RECORDED = THE ORIGINAL DATE ON COMMONS. VIEWS = A MADE-UP NUMBER (IT'S A JOKE SITE) + THIS BROWSER'S OWN WATCHES (LOCALSTORAGE).
+window.VIDEOS = [
+  { title: 'YOU WON\'T BELIEVE WHAT THESE BUTTONS DO', file: 'videos/buttons.webm', views: 2481337, seconds: 98, recorded: '2014-01-12', license: 'CC BY-SA 4.0',
+    author: 'Jan Honvehlmann', source: 'https://commons.wikimedia.org/wiki/File:Musical_keyboard_playing_recorded_melody_from_memory.webm' },
+  { title: 'WATCHING PAINT DRY (4K, 9 HOURS)', file: 'videos/paint-wall.webm', views: 9402118, seconds: 113, recorded: '2021-05-21', license: 'CC BY-SA 4.0',
+    author: 'Roryconnollyqs', source: 'https://commons.wikimedia.org/wiki/File:How_to_paint_over_a_bare_pebble_dashing_wall.webm' },
+  { title: 'DVD LOGO HITS THE CORNER (NOT CLICKBAIT)', file: 'videos/dvd.webm', views: 31770402, seconds: 60, recorded: '2026-04-30', license: 'Public domain',
+    author: 'Artemhao', source: 'https://commons.wikimedia.org/wiki/File:DVD_screensaver.webm' },
+  { title: 'NEWSPAPER PRINTER: THE MUSICAL (1937)', file: 'videos/newspaper-1937.webm', views: 412006, seconds: 104, recorded: '1937', license: 'Public domain',
+    author: 'AB Svensk Filmindustri', source: 'https://commons.wikimedia.org/wiki/File:Tidningstryck_1937.ogv' },
+  { title: 'UNBOXING THE BOX THE BOX CAME IN', file: 'videos/box.webm', views: 1203554, seconds: 75, recorded: '2025-01-12', license: 'CC BY-SA 3.0',
+    author: 'Frank Vincentz', source: 'https://commons.wikimedia.org/wiki/File:Kluse_-_Lotti_playing_in_a_box_v_01_ies.webm' },
+  { title: 'ASMR: A PRINTER THAT NEVER FINISHES', file: 'videos/3d-printer.webm', views: 87212, seconds: 71, recorded: '2013-09-12', license: 'CC BY-SA 3.0',
+    author: 'Subhashish Panigrahi', source: 'https://commons.wikimedia.org/wiki/File:Printing_in_progress_in_a_3D_printer.webm' },
+  { title: 'EXPLAINING MY CODE TO 1,000 RUBBER DUCKS', file: 'videos/duck-race.webm', views: 4560991, seconds: 98, recorded: '2022-06-12', license: 'CC BY 3.0',
+    author: 'Sébastien Corberon', source: 'https://commons.wikimedia.org/wiki/File:Duck_Race_2022_-_Fontainebleau.webm' },
+  { title: 'POV: TYPING FASTER TO BEAT THE PROGRESS BAR', file: 'videos/speed-typing.webm', views: 66031, seconds: 77, recorded: '2026-08-02', license: 'CC0',
+    author: 'Enteryourname0000', source: 'https://commons.wikimedia.org/wiki/File:Speed_typing_with_dvorak.webm' },
+  { title: 'HOW TO EXIT VIM (THIS VIDEO DOES NOT SAY)', file: 'videos/dvorak.webm', views: 1889240, seconds: 228, recorded: '2014-06-19', license: 'CC BY-SA 3.0',
+    author: 'William S. Hammack', source: 'https://commons.wikimedia.org/wiki/File:Why_the_Dvorak_keyboard_didn%E2%80%99t_take_over_the_world.webm' },
+  { title: 'I TRIED EVERY LOADING SPINNER (I PAINTED THEM)', file: 'videos/speed-painting.webm', views: 734118, seconds: 232, recorded: '2020-06-23', license: 'CC BY 3.0',
+    author: 'PainterTutorials', source: 'https://commons.wikimedia.org/wiki/File:Painter_Thick_Paint_speed_painting_by_MoDo.webm' },
+  { title: 'THIS VIDEO IS JUST THE THUMBNAIL', file: 'videos/nasa-dust.webm', views: 12604557, seconds: 167, recorded: '2010-09-23', license: 'Public domain',
+    author: 'NASA', source: 'https://commons.wikimedia.org/wiki/File:Dust_Models_Paint_Alien%27s_View_of_Solar_System.ogv' },
+  { title: 'GIANT RUBBER DUCK SAYS: TOUCH GRASS', file: 'videos/giant-ducks.webm', views: 3341009, seconds: 73, recorded: '2023-06-10', license: 'CC BY 3.0',
+    author: 'China News Video', source: 'https://commons.wikimedia.org/wiki/File:Hong_Kong_welcomes_back_giant_rubber_ducks_after_10_years.webm' },
+]

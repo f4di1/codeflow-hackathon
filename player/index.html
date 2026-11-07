@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VIDIOT PLAYER</title>
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <!-- 98.CSS (MIT, SEE VENDOR/98.CSS.LICENSE) GIVES THE RETRO OS LOOK. LOADED AFTER BOOTSTRAP SO IT WINS. -->
+  <link rel="stylesheet" href="vendor/98.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- POINTER-LOCK TARGET: WHILE LOCKED, REAL MOUSE EVENTS LAND HERE AND GET TURNED INTO THE CURSED CURSOR. -->
+  <div id="lock"></div>
+
+  <div class="desktop">
+    <!-- NO POP-UPS ANYWHERE: THE START BUTTON, CURSOR STATUS AND "RESTORE CURSOR" ALL LIVE IN THIS NORMAL WINDOW. -->
+    <div class="window cursor-bar">
+      <div class="title-bar"><div class="title-bar-text">🖱️ VIDIOT CURSOR.EXE</div></div>
+      <div class="window-body d-flex align-items-center gap-3">
+        <button id="start-btn">▶ CLICK HERE TO ENABLE THE VIDIOT CURSOR</button>
+        <span id="cursor-hud" class="cursor-hud">CURSOR: YOUR BORING NORMAL ONE</span>
+        <span class="hint ms-auto">PRESENTER: ESC = NORMAL CURSOR · PRESS ` THREE TIMES = CALM MODE</span>
+      </div>
+    </div>
+
+    <div class="window ad ad-banner">
+      <div class="title-bar">
+        <div class="title-bar-text">📢 ADVERTISEMENT.EXE</div>
+        <div class="title-bar-controls"><button class="tb" aria-label="MINIMIZE">_</button><button class="tb" aria-label="CLOSE">✕</button></div>
+      </div>
+      <div class="window-body"><span class="ad-text"></span> <small class="ad-why">AD · WHY THIS AD? BECAUSE.</small></div>
+    </div>
+
+    <div class="d-flex layout">
+      <main class="window recs">
+        <div class="title-bar">
+          <div class="title-bar-text">📼 VIDIOT.EXE — RECOMMENDED FOR YOU (47,000 VIDEOS, YOU WILL WATCH 0)</div>
+          <div class="title-bar-controls"><button class="tb" aria-label="MINIMIZE">_</button><button class="tb" aria-label="MAXIMIZE">□</button><button class="tb" aria-label="CLOSE">✕</button></div>
+        </div>
+        <div class="window-body"><div class="row g-2" id="recs"></div></div>
+      </main>
+
+      <aside class="side">
+        <div class="window ad ad-side">
+          <div class="title-bar">
+            <div class="title-bar-text">💰 SPONSORED.EXE</div>
+            <div class="title-bar-controls"><button class="tb" aria-label="CLOSE">✕</button></div>
+          </div>
+          <div class="window-body"><span class="ad-text"></span><small class="d-block mt-2">SPONSORED · CANNOT BE CLOSED</small></div>
+        </div>
+
+        <div class="window mt-3">
+          <div class="title-bar"><div class="title-bar-text">ℹ️ STATUS</div></div>
+          <div class="window-body"><div id="status" class="status" role="status"></div></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <div class="taskbar">
+    <button id="start-menu" class="start-menu">▶ START</button>
+    <span class="task">📼 VIDIOT.EXE</span>
+    <span class="task">📢 ADVERTISEMENT.EXE</span>
+    <span class="clock" id="clock"></span>
+  </div>
+
+  <div id="cursor" class="fake-cursor">🐌</div>
+  <div id="magnet-target" class="magnet-target"></div>
+
+  <!-- CLASSIC SCRIPTS (NOT MODULES) SO THE PAGE ALSO WORKS WHEN OPENED STRAIGHT FROM DISK. -->
+  <script src="videos.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/fun.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/player.js"></script>
+</body>
+</html>

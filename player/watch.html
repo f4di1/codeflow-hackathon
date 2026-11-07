@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VIDIOT PLAYER</title>
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/98.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- THE WATCH PAGE: OPENED BY CLICKING A CARD (WATCH.HTML?V=NAME). ONLY FILES FROM VIDEOS.JS ARE PLAYED. LOCKED FEATURES ARE UNLOCKED BY CHALLENGES IN FEATURES.EXE. -->
+  <div class="desktop">
+    <div class="window watch">
+      <div class="title-bar">
+        <div class="title-bar-text" id="watch-title">📼 VIDIOT.EXE</div>
+        <div class="title-bar-controls"><button class="tb" aria-label="CLOSE">✕</button></div>
+      </div>
+      <div class="window-body">
+        <div class="watch-layout">
+          <div id="watch"></div>
+          <aside class="window features">
+            <div class="title-bar"><div class="title-bar-text" id="features-title">🔒 FEATURES.EXE</div></div>
+            <div class="window-body" id="features"></div>
+          </aside>
+        </div>
+        <div class="d-flex gap-2 mt-2 align-items-center">
+          <a class="back" href="index.html"><button>◀ BACK TO RECOMMENDED</button></a>
+          <button id="prev">⏮ PREVIOUS</button><button id="next">NEXT ⏭</button>
+          <div id="status" class="status" role="status"></div>
+        </div>
+      </div>
+      <div class="status-bar" id="watch-stats"></div>
+    </div>
+  </div>
+
+  <div class="taskbar">
+    <a class="start-link" href="index.html"><button class="start-menu">▶ START</button></a>
+    <span class="task">📼 VIDIOT.EXE</span>
+    <span class="clock" id="clock"></span>
+  </div>
+
+  <script src="videos.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/fun.js"></script>
+  <script src="js/interrupts.js"></script>
+  <script src="js/watch.js"></script>
+</body>
+</html>
